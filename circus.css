@@ -83,6 +83,7 @@ header {
     border-color: white;
     border-top-right-radius: 21px;
     border-top-left-radius: 21px;
+    border-bottom: 10px solid var(--gold);
     margin: 30px auto 0px auto;
     max-width: 1200px;
     box-shadow: 5px -5px 0 5px var(--gold), -5px -5px 0 5px var(--gold);
