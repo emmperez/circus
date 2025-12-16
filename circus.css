@@ -4,9 +4,11 @@
     --gold: #D4AF37;
     --cream: #E3D7C0;
     --pink: #ff4081;
-    --yellow: #ffeb3b; 
-    --teal:#00bcd4; 
+    --yellow: #ffeb3b;
+    --teal: #00bcd4;
     --green: #4caf50;
+    --darkBlue: #1a237e;
+    --white: #fff;
 }
 
 /**************************************************/
@@ -501,9 +503,8 @@ header div.grid:nth-child(1) div.grid__unit:nth-child(1) {
 }
 
 .nav--utility li {
-    color: #fff;
-    background: var(--green);
-    border: 2px solid var(--gold);
+    background: var(--darkBlue);
+    border: 2px solid var(--cream);
     border-radius: 5px;
     margin: 0 5px;
 }
@@ -514,7 +515,7 @@ header div.grid:nth-child(1) div.grid__unit:nth-child(1) {
 
 .nav--utility a {
     font-weight: bold;
-    color: #fff;
+    color: var(--white);
 }
 
 .nav--utility a:hover {
