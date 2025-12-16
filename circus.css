@@ -503,13 +503,11 @@ header div.grid:nth-child(1) div.grid__unit:nth-child(1) {
 
 /*Utility Navigation Buttons*/
 .nav--utility {
+    background: var(--darkBlue);
 }
 
 .nav--utility li {
-    background: var(--darkBlue);
-    border: 2px solid var(--cream);
-    border-radius: 5px;
-    margin: 0 5px;
+    border-right: 1px solid var(--cream);
 }
 
 .nav--utility li a:hover {
