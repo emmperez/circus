@@ -3,6 +3,10 @@
     --red: #D0332D;
     --gold: #D4AF37;
     --cream: #E3D7C0;
+    --pink: #ff4081;
+    --yellow: #ffeb3b; 
+    --teal:#00bcd4; 
+    --green: #4caf50;
 }
 
 /**************************************************/
@@ -228,11 +232,11 @@ h6, .h6 {
 /**************************************************/
 /*Link colors. To target data section only add main in front of the selector*/
 a, a:visited {
-    color: var(--blue);
+    color: var(--teal);
 }
 
 a:hover, a:active {
-    color: var(--lightBlue);
+    color: var(--teal);
 }
 
 /**************************************************/
@@ -244,7 +248,7 @@ a.btn--acctCreate {
 }
 
 a.btn--acctCreate:hover {
-    color: var(--lightBlue);
+    color: var(--teal);
 }
 
 .btn--toolbar {
@@ -255,43 +259,41 @@ a.btn--acctCreate:hover {
 /*Default buttons*/
 .btn--default {
     color: white;
-    background: linear-gradient(var(--blue),rgba(4, 191, 191, 0.5));
+    background: linear-gradient(var(--teal),rgba(4, 191, 191, 0.5));
     margin: 4px;
-    border: solid 1px var(--darkBlue);
+    border: solid 1px var(--teal);
 }
 
 .btn--default:hover {
     color: white;
-    background: var(--darkBlue);
-    border: solid 1px white;
+    border: solid 1px var(--gold);
 }
 
 /*Primary buttons*/
 .btn--primary, a.btn--primary {
     color: white;
-    background: linear-gradient(var(--blue),rgba(4, 191, 191, 0.5));
+    background: linear-gradient(var(--teal),rgba(4, 191, 191, 0.5));
     margin: 4px;
-    border: solid 1px var(--darkBlue);
+    border: solid 1px var(--teal);
 }
 
 .btn--primary:hover, a.btn--primary:hover {
     color: white;
-    background: var(--darkBlue);
-    border: solid 1px white;
+    border: solid 1px var(--gold);
 }
 
 /*Text link buttons*/
 .btn--link {
     color: white;
-    background: linear-gradient(var(--blue),rgba(4, 191, 191, 0.5));
+    background: linear-gradient(var(--teal),rgba(4, 191, 191, 0.5));
     margin: 4px;
-    border: solid 1px var(--darkBlue);
+    border: solid 1px var(--teal);
 }
 
 .btn--link:hover {
     color: white;
-    background: var(--darkBlue);
-    border: solid 1px white;
+    background: var(--teal);
+    border: solid 1px var(--gold);
 }
 
 /*Other buttons*/
@@ -300,14 +302,14 @@ a.btn--acctCreate:hover {
 }
 
 #accountSwitcher.btn--link {
-    background: var(--darkBlue);
+    background: var(--teal);
 }
 
 /**************************************************/
 /*                     MFP                        */
 /**************************************************/
 [id="transfer"] > div.content--block {
-    background: var(--darkBlue);
+    background: var(--teal);
 }
 
 /**************************************************/
@@ -325,7 +327,7 @@ a.btn--acctCreate:hover {
 /*                   Data Tables                  */
 /**************************************************/
 .text--plain {
-    color: var(--orange);
+    color: var(--teal);
 }
 
 .h3.text--plain {
@@ -336,7 +338,7 @@ a.btn--acctCreate:hover {
 .slat.singleAccount {
     border-top-style: solid;
     border-botom-style: solid;
-    border-color: var(--blue);
+    border-color: var(--teal);
 }
 
 h2 + div.slat {
@@ -353,7 +355,7 @@ h2 + div.slat {
 }
 
 .table--underlined>thead>tr>th, .table--underlined>tbody>tr>th, .table--underlined>tbody>tr>td {
-    border-bottom: 1px solid var(--blue);
+    border-bottom: 1px solid var(--teal);
 }
 
 .table--underlined>thead tr:last-child th {
@@ -371,7 +373,7 @@ h2 + div.slat {
 thead {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    background-color: var(--blue);
+    background-color: var(--teal);
 }
 
 thead th:first-child {
@@ -430,26 +432,26 @@ input, select {
 }
 
 .alert--error {
-    background: #fdcf9d;
-    border-color: var(--orange);
-    color: var(--darkBlue);
+    background: var(--teal);
+    border-color: var(--gold);
+    color: #fff;
     font-weight: bold;
 }
 
 .alert--error p {
-    color: var(--darkBlue);
+    color: var(--teal);
 }
 
 .alert--info {
-    background: #B5FBF4;
-    border-color: var(--lightBlue);
-    color: var(--darkBlue);
+    background: var(--teal);
+    border-color: var(--gold);
+    color: #fff;
 }
 
 .alert--success {
     background: rgba(78,147,104,0.2);
-    border-color: var(--midGreen);
-    color: var(--darkGreen);
+    border-color: var(--green);
+    color: var(--green);
 }
 
 .alert--warning {
@@ -459,7 +461,7 @@ input, select {
 }
 
 .text--error {
-    color: var(--darkRed);
+    color: var(--red-dark);
 }
 
 .text--info {
@@ -471,7 +473,7 @@ input, select {
 }
 
 .text--success {
-    color: var(--darkGreen);
+    color: var(--green);
 }
 
 .text--warning {
@@ -491,7 +493,7 @@ header div.grid:nth-child(1) div.grid__unit:nth-child(1) {
 }
 
 .message--welcome p {
-    color: var(--darkBlue);
+    color: var(--teal);
 }
 
 /*Utility Navigation Buttons*/
@@ -499,22 +501,24 @@ header div.grid:nth-child(1) div.grid__unit:nth-child(1) {
 }
 
 .nav--utility li {
-    border-left-style: solid;
-    border-color: var(--darkBlue);
-    border-width: 1px;
+    color: #fff;
+    background: var(--green);
+    border: 2px solid var(--gold);
+    border-radius: 5px;
+    margin: 0 5px;
 }
 
 .nav--utility li a:hover {
-    color: var(--orange);
+    text-decoration: underline;
 }
 
 .nav--utility a {
     font-weight: bold;
-    color: var(--darkBlue);
+    color: #fff;
 }
 
 .nav--utility a:hover {
-    color: var(--orange);
+    text-decoration: underline;
 }
 
 /**************************************************/
@@ -525,7 +529,7 @@ header div.grid__unit ~ div.grid__unit:nth-child(3) {
 }
 
 .nav--primary {
-    background-color: var(--blue);
+    background-color: var(--red-dark);
     box-shadow: 0px 2px 5px 5px #002737;
     margin-left: -24px;
     margin-top: 20px;
@@ -542,7 +546,7 @@ header div.grid__unit ~ div.grid__unit:nth-child(3) {
 
 .nav--primary li.is--selected a {
     background-color: white;
-    color: var(--darkBlue);
+    color: var(--teal);
     font-weight: bold;
 }
 
@@ -704,23 +708,4 @@ footer a {
     [data-ui-component= "transactions"] {
         padding-left: 0px;
     }
-}
-
-main > .grid > .grid__unit.one-whole {
-    text-align: center;
-}
-
-main > .grid > .grid__unit.one-whole > #loginIndex > form.form--horizontal.padding--add {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-main > .grid > .grid__unit.one-whole > #loginIndex > form.form--horizontal.padding--add > div.form__group {
-    display: flex;
-    justify-content: center;
-}
-
-main > .grid > .grid__unit.one-whole > #loginIndex > form.form--horizontal.padding--add > div.form__group > * {
-    left: 0;
 }
