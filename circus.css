@@ -213,7 +213,7 @@ h2, .h2 {
 
 h3, .h3 {
     font-size: 1.43rem;
-    color: var(--blue);
+    color: var(--white);
 }
 
 h4, .h4 {
@@ -303,7 +303,7 @@ a.btn--acctCreate:hover {
 }
 
 #accountSwitcher.btn--link {
-    background: var(--teal);
+    background: var(--darkBlue);
 }
 
 /**************************************************/
@@ -594,7 +594,7 @@ header div.grid__unit ~ div.grid__unit:nth-child(3) {
 
 .nav--account li {
     border-right-style: solid;
-    border-color: var(--blue);
+    border-color: var(--gold);
     border-width: 1px;
 }
 
